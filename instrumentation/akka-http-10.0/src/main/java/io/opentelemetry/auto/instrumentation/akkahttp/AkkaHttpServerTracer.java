@@ -62,7 +62,7 @@ public class AkkaHttpServerTracer extends HttpServerTracer<HttpRequest, HttpRequ
 
   @Override
   protected Getter<HttpRequest> getGetter() {
-    return AkkaHttpServerHeaders.GETTER;
+    return AkkaHttpRequestGetter.GETTER;
   }
 
   @Override

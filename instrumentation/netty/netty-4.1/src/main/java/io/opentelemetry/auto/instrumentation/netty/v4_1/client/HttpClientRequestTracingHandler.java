@@ -18,7 +18,7 @@ package io.opentelemetry.auto.instrumentation.netty.v4_1.client;
 
 import static io.opentelemetry.auto.instrumentation.netty.v4_1.client.NettyHttpClientDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.netty.v4_1.client.NettyHttpClientDecorator.TRACER;
-import static io.opentelemetry.auto.instrumentation.netty.v4_1.client.NettyResponseInjectAdapter.SETTER;
+import static io.opentelemetry.auto.instrumentation.netty.v4_1.client.NettyResponseSetter.SETTER;
 import static io.opentelemetry.trace.Span.Kind.CLIENT;
 import static io.opentelemetry.trace.TracingContextUtils.currentContextWith;
 import static io.opentelemetry.trace.TracingContextUtils.withSpan;

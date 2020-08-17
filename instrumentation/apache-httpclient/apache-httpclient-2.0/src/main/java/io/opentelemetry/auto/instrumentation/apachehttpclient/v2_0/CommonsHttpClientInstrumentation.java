@@ -18,7 +18,7 @@ package io.opentelemetry.auto.instrumentation.apachehttpclient.v2_0;
 
 import static io.opentelemetry.auto.instrumentation.apachehttpclient.v2_0.CommonsHttpClientDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.apachehttpclient.v2_0.CommonsHttpClientDecorator.TRACER;
-import static io.opentelemetry.auto.instrumentation.apachehttpclient.v2_0.HttpHeadersInjectAdapter.SETTER;
+import static io.opentelemetry.auto.instrumentation.apachehttpclient.v2_0.HttpHeadersSetter.SETTER;
 import static io.opentelemetry.auto.tooling.ClassLoaderMatcher.hasClassesNamed;
 import static io.opentelemetry.auto.tooling.bytebuddy.matcher.AgentElementMatchers.extendsClass;
 import static io.opentelemetry.context.ContextUtils.withScopedContext;

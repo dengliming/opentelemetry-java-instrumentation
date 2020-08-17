@@ -36,7 +36,7 @@ import org.eclipse.jetty.server.Server
 import org.eclipse.jetty.server.handler.AbstractHandler
 import org.eclipse.jetty.server.handler.HandlerList
 
-import static io.opentelemetry.auto.test.server.http.HttpServletRequestExtractAdapter.GETTER
+import static HttpServletRequestGetter.GETTER
 import static io.opentelemetry.trace.Span.Kind.SERVER
 
 class TestHttpServer implements AutoCloseable {

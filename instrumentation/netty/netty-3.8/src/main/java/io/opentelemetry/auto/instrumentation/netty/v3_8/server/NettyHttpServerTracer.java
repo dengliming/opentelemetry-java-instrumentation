@@ -79,7 +79,7 @@ public class NettyHttpServerTracer
 
   @Override
   protected Getter<HttpRequest> getGetter() {
-    return NettyRequestExtractAdapter.GETTER;
+    return NettyRequestGetter.GETTER;
   }
 
   @Override

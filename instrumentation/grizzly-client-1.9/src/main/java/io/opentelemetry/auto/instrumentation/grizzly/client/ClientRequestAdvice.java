@@ -18,7 +18,7 @@ package io.opentelemetry.auto.instrumentation.grizzly.client;
 
 import static io.opentelemetry.auto.instrumentation.grizzly.client.ClientDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.grizzly.client.ClientDecorator.TRACER;
-import static io.opentelemetry.auto.instrumentation.grizzly.client.InjectAdapter.SETTER;
+import static io.opentelemetry.auto.instrumentation.grizzly.client.RequestHeadersSetter.SETTER;
 import static io.opentelemetry.context.ContextUtils.withScopedContext;
 import static io.opentelemetry.trace.Span.Kind.CLIENT;
 import static io.opentelemetry.trace.TracingContextUtils.getSpan;

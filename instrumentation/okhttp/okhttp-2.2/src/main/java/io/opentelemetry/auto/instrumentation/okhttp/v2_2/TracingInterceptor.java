@@ -48,7 +48,7 @@ public class TracingInterceptor implements Interceptor {
     Request.Builder requestBuilder = chain.request().newBuilder();
     OpenTelemetry.getPropagators()
         .getHttpTextFormat()
-        .inject(context, requestBuilder, RequestBuilderInjectAdapter.SETTER);
+        .inject(context, requestBuilder, RequestHeaderSetter.SETTER);
 
     Response response;
     try (Scope scope = withScopedContext(context)) {

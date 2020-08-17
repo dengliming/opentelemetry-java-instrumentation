@@ -31,7 +31,7 @@ class ApacheHttpClientDecorator extends HttpClientDecorator<HttpUriRequest, Http
   public void inject(Context context, HttpUriRequest request) {
     OpenTelemetry.getPropagators()
         .getHttpTextFormat()
-        .inject(context, request, HttpHeadersInjectAdapter.SETTER);
+        .inject(context, request, HttpHeadersSetter.SETTER);
   }
 
   @Override

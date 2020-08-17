@@ -17,7 +17,7 @@
 package io.opentelemetry.instrumentation.spring.httpclients;
 
 import static io.opentelemetry.OpenTelemetry.getPropagators;
-import static io.opentelemetry.instrumentation.spring.httpclients.HttpHeadersInjectAdapter.SETTER;
+import static io.opentelemetry.instrumentation.spring.httpclients.HttpHeadersSetter.SETTER;
 
 import io.grpc.Context;
 import io.opentelemetry.auto.bootstrap.instrumentation.decorator.HttpClientDecorator;

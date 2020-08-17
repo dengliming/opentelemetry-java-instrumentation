@@ -40,8 +40,8 @@ public class ContextPayload {
       OpenTelemetry.getTracerProvider().get("io.opentelemetry.auto.rmi");
 
   private final Map<String, String> context;
-  public static final ExtractAdapter GETTER = new ExtractAdapter();
-  public static final InjectAdapter SETTER = new InjectAdapter();
+  public static final ContextPayloadGetter GETTER = new ContextPayloadGetter();
+  public static final ContextPayloadSetter SETTER = new ContextPayloadSetter();
 
   public ContextPayload() {
     context = new HashMap<>();
@@ -79,14 +79,14 @@ public class ContextPayload {
     out.writeObject(context);
   }
 
-  public static class ExtractAdapter implements HttpTextFormat.Getter<ContextPayload> {
+  public static class ContextPayloadGetter implements HttpTextFormat.Getter<ContextPayload> {
     @Override
     public String get(final ContextPayload carrier, final String key) {
       return carrier.getContext().get(key);
     }
   }
 
-  public static class InjectAdapter implements HttpTextFormat.Setter<ContextPayload> {
+  public static class ContextPayloadSetter implements HttpTextFormat.Setter<ContextPayload> {
     @Override
     public void set(final ContextPayload carrier, final String key, final String value) {
       carrier.getContext().put(key, value);

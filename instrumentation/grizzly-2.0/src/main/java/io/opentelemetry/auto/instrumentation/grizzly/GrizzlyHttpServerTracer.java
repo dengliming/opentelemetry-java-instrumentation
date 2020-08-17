@@ -73,7 +73,7 @@ public class GrizzlyHttpServerTracer
 
   @Override
   protected Getter<HttpRequestPacket> getGetter() {
-    return ExtractAdapter.GETTER;
+    return HttpRequestPacketGetter.GETTER;
   }
 
   @Override

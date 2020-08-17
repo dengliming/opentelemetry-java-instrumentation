@@ -16,7 +16,7 @@
 
 package io.opentelemetry.auto.instrumentation.httpurlconnection;
 
-import static io.opentelemetry.auto.instrumentation.httpurlconnection.HeadersInjectAdapter.SETTER;
+import static io.opentelemetry.auto.instrumentation.httpurlconnection.RequestPropertySetter.SETTER;
 import static io.opentelemetry.auto.instrumentation.httpurlconnection.HttpUrlConnectionDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.httpurlconnection.HttpUrlConnectionDecorator.TRACER;
 import static io.opentelemetry.auto.tooling.bytebuddy.matcher.AgentElementMatchers.extendsClass;

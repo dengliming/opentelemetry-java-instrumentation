@@ -18,7 +18,7 @@ package io.opentelemetry.instrumentation.springwebflux.client;
 
 import static io.opentelemetry.OpenTelemetry.getPropagators;
 import static io.opentelemetry.OpenTelemetry.getTracerProvider;
-import static io.opentelemetry.instrumentation.springwebflux.client.HttpHeadersInjectAdapter.SETTER;
+import static io.opentelemetry.instrumentation.springwebflux.client.HttpHeadersSetter.SETTER;
 
 import io.grpc.Context;
 import io.opentelemetry.auto.bootstrap.instrumentation.decorator.HttpClientDecorator;

@@ -64,7 +64,7 @@ public class NettyHttpServerTracer extends HttpServerTracer<HttpRequest, Channel
 
   @Override
   protected Getter<HttpRequest> getGetter() {
-    return NettyRequestExtractAdapter.GETTER;
+    return NettyRequestGetter.GETTER;
   }
 
   @Override

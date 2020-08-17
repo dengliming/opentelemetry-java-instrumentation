@@ -17,7 +17,7 @@
 package io.opentelemetry.auto.instrumentation.jaxrsclient.v1_1;
 
 import static io.opentelemetry.auto.bootstrap.instrumentation.decorator.HttpServerTracer.CONTEXT_ATTRIBUTE;
-import static io.opentelemetry.auto.instrumentation.jaxrsclient.v1_1.InjectAdapter.SETTER;
+import static io.opentelemetry.auto.instrumentation.jaxrsclient.v1_1.MultivaluedMapSetter.SETTER;
 import static io.opentelemetry.auto.instrumentation.jaxrsclient.v1_1.JaxRsClientV1Decorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.jaxrsclient.v1_1.JaxRsClientV1Decorator.TRACER;
 import static io.opentelemetry.auto.tooling.ClassLoaderMatcher.hasClassesNamed;

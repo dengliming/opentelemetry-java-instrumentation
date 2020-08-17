@@ -16,7 +16,7 @@
 
 package io.opentelemetry.auto.instrumentation.playws.v2_0;
 
-import static io.opentelemetry.auto.instrumentation.playws.HeadersInjectAdapter.SETTER;
+import static io.opentelemetry.auto.instrumentation.playws.RequestHeadersSetter.SETTER;
 import static io.opentelemetry.auto.instrumentation.playws.PlayWSClientDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.playws.PlayWSClientDecorator.TRACER;
 import static io.opentelemetry.trace.Span.Kind.CLIENT;

@@ -18,8 +18,8 @@ package io.opentelemetry.auto.instrumentation.khttp;
 
 import static io.opentelemetry.auto.instrumentation.khttp.KHttpDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.khttp.KHttpDecorator.TRACER;
-import static io.opentelemetry.auto.instrumentation.khttp.KHttpHeadersInjectAdapter.SETTER;
-import static io.opentelemetry.auto.instrumentation.khttp.KHttpHeadersInjectAdapter.asWritable;
+import static io.opentelemetry.auto.instrumentation.khttp.KHttpHeadersSetter.SETTER;
+import static io.opentelemetry.auto.instrumentation.khttp.KHttpHeadersSetter.asWritable;
 import static io.opentelemetry.context.ContextUtils.withScopedContext;
 import static io.opentelemetry.trace.Span.Kind.CLIENT;
 import static io.opentelemetry.trace.TracingContextUtils.withSpan;

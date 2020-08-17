@@ -104,7 +104,7 @@ public final class AkkaHttpClientInstrumentation extends Instrumenter.Default {
       Context context = withSpan(span, Context.current());
 
       if (request != null) {
-        AkkaHttpHeaders headers = new AkkaHttpHeaders(request);
+        AkkaHttpHeadersSetter headers = new AkkaHttpHeadersSetter(request);
         OpenTelemetry.getPropagators().getHttpTextFormat().inject(context, request, headers);
         // Request is immutable, so we have to assign new value once we update headers
         request = headers.getRequest();
@@ -157,10 +157,10 @@ public final class AkkaHttpClientInstrumentation extends Instrumenter.Default {
     }
   }
 
-  public static class AkkaHttpHeaders implements HttpTextFormat.Setter<HttpRequest> {
+  public static class AkkaHttpHeadersSetter implements HttpTextFormat.Setter<HttpRequest> {
     private HttpRequest request;
 
-    public AkkaHttpHeaders(final HttpRequest request) {
+    public AkkaHttpHeadersSetter(final HttpRequest request) {
       this.request = request;
     }
 

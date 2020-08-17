@@ -19,7 +19,7 @@ package io.opentelemetry.auto.instrumentation.jms;
 import static io.opentelemetry.auto.bootstrap.instrumentation.decorator.BaseDecorator.extract;
 import static io.opentelemetry.auto.instrumentation.jms.JMSDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.jms.JMSDecorator.TRACER;
-import static io.opentelemetry.auto.instrumentation.jms.MessageExtractAdapter.GETTER;
+import static io.opentelemetry.auto.instrumentation.jms.MessageGetter.GETTER;
 import static io.opentelemetry.auto.tooling.ClassLoaderMatcher.hasClassesNamed;
 import static io.opentelemetry.auto.tooling.bytebuddy.matcher.AgentElementMatchers.implementsInterface;
 import static io.opentelemetry.trace.Span.Kind.CONSUMER;

@@ -18,7 +18,7 @@ package io.opentelemetry.auto.instrumentation.grpc.client;
 
 import static io.opentelemetry.auto.instrumentation.grpc.client.GrpcClientDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.grpc.client.GrpcClientDecorator.TRACER;
-import static io.opentelemetry.auto.instrumentation.grpc.client.GrpcInjectAdapter.SETTER;
+import static io.opentelemetry.auto.instrumentation.grpc.client.GrpcMetadataSetter.SETTER;
 import static io.opentelemetry.trace.Span.Kind.CLIENT;
 import static io.opentelemetry.trace.TracingContextUtils.currentContextWith;
 import static io.opentelemetry.trace.TracingContextUtils.withSpan;

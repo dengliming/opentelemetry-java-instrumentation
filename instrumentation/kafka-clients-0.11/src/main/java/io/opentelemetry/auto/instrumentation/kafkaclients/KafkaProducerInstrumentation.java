@@ -18,7 +18,7 @@ package io.opentelemetry.auto.instrumentation.kafkaclients;
 
 import static io.opentelemetry.auto.instrumentation.kafkaclients.KafkaDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.kafkaclients.KafkaDecorator.TRACER;
-import static io.opentelemetry.auto.instrumentation.kafkaclients.TextMapInjectAdapter.SETTER;
+import static io.opentelemetry.auto.instrumentation.kafkaclients.KafkaHeadersSetter.SETTER;
 import static io.opentelemetry.trace.Span.Kind.PRODUCER;
 import static io.opentelemetry.trace.TracingContextUtils.currentContextWith;
 import static io.opentelemetry.trace.TracingContextUtils.withSpan;

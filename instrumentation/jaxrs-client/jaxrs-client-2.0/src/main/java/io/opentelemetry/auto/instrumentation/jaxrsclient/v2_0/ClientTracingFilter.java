@@ -16,7 +16,7 @@
 
 package io.opentelemetry.auto.instrumentation.jaxrsclient.v2_0;
 
-import static io.opentelemetry.auto.instrumentation.jaxrsclient.v2_0.InjectAdapter.SETTER;
+import static io.opentelemetry.auto.instrumentation.jaxrsclient.v2_0.MultivaluedMapSetter.SETTER;
 import static io.opentelemetry.auto.instrumentation.jaxrsclient.v2_0.JaxRsClientDecorator.DECORATE;
 import static io.opentelemetry.auto.instrumentation.jaxrsclient.v2_0.JaxRsClientDecorator.TRACER;
 import static io.opentelemetry.trace.Span.Kind.CLIENT;
